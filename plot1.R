@@ -8,6 +8,6 @@ selectedRows <- as.Date(c("2007-02-01","2007-02-02"),"%Y-%m-%d")
 dataset <- subset(dataset, Date %in% selectedRows)
 
 #Reconstruct Plot 1
-png("plot1.png", width = 400, height = 400)
+png("plot1.png", width = 480, height = 480)
 hist(dataset$Global_active_power, main = "Global Active Power", xlab="Global Active Power (Kilowatts)", ylab = "Frequency", col="red")
 dev.off()
