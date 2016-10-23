@@ -8,7 +8,7 @@ selectedRows <- as.Date(c("2007-02-01","2007-02-02"),"%Y-%m-%d")
 dataset <- subset(dataset, Date %in% selectedRows)
 
 #Reconstruct Plot 3
-png("plot3.png", width = 400, height = 400)
+png("plot3.png", width = 480, height = 480)
 plot(dataset$Time, dataset$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering", col="black")
 lines(dataset$Time, dataset$Sub_metering_2, col="red")
 lines(dataset$Time, dataset$Sub_metering_3, col="blue")
