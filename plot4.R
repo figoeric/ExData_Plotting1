@@ -8,7 +8,7 @@ selectedRows <- as.Date(c("2007-02-01","2007-02-02"),"%Y-%m-%d")
 dataset <- subset(dataset, Date %in% selectedRows)
 
 #Reconstruct Plot 4
-png("plot4.png", width = 400, height = 400)
+png("plot4.png", width = 480, height = 480)
 par(mfcol=c(2,2))
 
 plot(dataset$Time, dataset$Global_active_power, type="l", xlab="", ylab="Global Active Power")
