@@ -18,9 +18,9 @@ lines(dataset$Time, dataset$Sub_metering_2, col="red")
 lines(dataset$Time, dataset$Sub_metering_3, col="blue")
 legend("topright",c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),col=c("black", "red", "blue"),lty = 1, cex = 0.5)
 
-plot(dataset$Time, dataset$Voltage, type="l", xlab = "datatime", ylab = "Voltage")
+plot(dataset$Time, dataset$Voltage, type="l", xlab = "datetime", ylab = "Voltage")
 
-plot(dataset$Time, dataset$Global_reactive_power, type = "n", xlab = "datatime", ylab = "Global_reactive_power")
+plot(dataset$Time, dataset$Global_reactive_power, type = "n", xlab = "datetime", ylab = "Global_reactive_power")
 lines(dataset$Time, dataset$Global_reactive_power)
 
 dev.off()
